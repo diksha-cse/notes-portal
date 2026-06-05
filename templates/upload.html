@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Notes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f0f4ff; }
+        .navbar { background-color: #1a1a5e; }
+        .form-box {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark px-4 py-3">
+    <span class="navbar-brand fw-bold">📚 BEU Notes Portal</span>
+    <a href="/" class="btn btn-warning">Home</a>
+</nav>
+
+<!-- Upload Form -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 form-box">
+            <h4 class="fw-bold text-primary text-center mb-4">📤 Upload Your Notes</h4>
+
+            {% if success %}
+            <div class="alert alert-success text-center">
+                ✅ Notes successfully upload ho gaye!
+            </div>
+            {% endif %}
+
+            <form method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Student Name:</label>
+                    <input type="text" name="uploaded_by" class="form-control" placeholder="Apna naam likho" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Subject Name:</label>
+                    <input type="text" name="subject" class="form-control" placeholder="Subject ka naam" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Semester:</label>
+                    <select name="semester" class="form-select" required>
+                        <option value="">Select Semester</option>
+                        <option>1st Sem</option>
+                        <option>2nd Sem</option>
+                        <option>3rd Sem</option>
+                        <option>4th Sem</option>
+                        <option>5th Sem</option>
+                        <option>6th Sem</option>
+                        <option>7th Sem</option>
+                        <option>8th Sem</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Branch:</label>
+                    <select name="branch" class="form-select" required>
+                        <option value="">Select Branch</option>
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>ME</option>
+                        <option>Civil</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Upload PDF File:</label>
+                    <input type="file" name="file" class="form-control" accept=".pdf" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 fw-bold">
+                    ⬆️ Upload Notes
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
