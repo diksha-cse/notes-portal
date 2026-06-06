@@ -5,6 +5,7 @@ A web-based Notes Sharing Portal developed for engineering students to upload, m
 BEU Notes Sharing Portal provides a centralized platform where students can share and access study materials branch-wise and semester-wise. The system simplifies academic resource sharing and helps students easily find relevant notes.
 
 ✨ Features
+
 - Upload PDF Notes
 - Download Notes
 - Branch-wise Categorization
@@ -27,6 +28,7 @@ Version Control
 - Git & GitHub
 
 📂 Project Structure
+
 notes_portal
 ├── templates
 │   ├── home.html
@@ -52,6 +54,7 @@ GitHub Repository
 <img width="1885" height="882" alt="Screenshot 2026-06-05 180541" src="https://github.com/user-attachments/assets/4257a6f3-bf56-4eda-b200-697d138c466e" />
 
 🎯 Future Enhancements
+
 - User Login & Registration
 - Search Functionality
 - Subject-Based Filters
@@ -60,6 +63,7 @@ GitHub Repository
 - Notes Rating System
 
 📈 Learning Outcomes
+
 Through this project, I learned:
 - Flask Web Development
 - Database Management using SQLite
@@ -68,6 +72,7 @@ Through this project, I learned:
 - GitHub Repository Management
 
 👩‍💻 Developer
+
 Diksha Kumari
 B.Tech Computer Science & Engineering
 
